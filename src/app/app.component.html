@@ -1,0 +1,15 @@
+<div class="nav navbar-dark bg-dark container-fluid">
+    <div class="heading">WildLife Photography</div>
+</div>
+<section class="jumbotron text-center">
+<div class="container-fluid content">
+  <div class="col-md-6 buttonContainer">
+    <app-tooltip *ngIf="viewClicked" [message]="'Click this button to view image'"></app-tooltip>
+    <button id="view" class="btn btn-primary" (click)="buttonClick($event)" (focusout)="reset($event)">View</button>    
+  </div>
+  <div class="col-md-6 buttonContainer">
+    <app-tooltip *ngIf="downloadClicked" [message]="'Click this button to download image'"></app-tooltip>
+    <button id="download" class="btn btn-primary" (click)="buttonClick($event)" (focusout)="reset($event)">Download</button>    
+  </div>
+</div>
+</section>

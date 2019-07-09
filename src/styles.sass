@@ -1,0 +1,25 @@
+$break-small: 767px;
+$break-medium: 1015px;
+$break-large: 1200px;
+
+@media screen and (max-width: $break-small)
+    body
+        display: inline-block
+    .heading
+        padding: 0 36% !important
+    .jumbotron
+        padding: 10rem 4rem !important
+    .buttonContainer
+        width: 50% !important
+    .btn
+        width: 130% !important
+    .tooltipBox
+        margin: -65px 0 0 -39px !important
+
+@media screen and (min-width: $break-small) and (max-width: $break-medium)
+    .jumbotron
+        padding: 10rem 4rem !important
+
+@media screen and (min-width: $break-medium) and (max-width: $break-large)
+    .tooltipBox
+        margin: -65px 0 0 -12px !important
